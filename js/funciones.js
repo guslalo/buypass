@@ -40,7 +40,7 @@ $(window).load(function(){
 
             }
         }
-    })
+    });
     //owlCarousel//
     $('.owl-carousel.slideprincipal').owlCarousel({
         themeClass: 'owl-fullscreen owl-nonav white owl-loaded',
@@ -79,11 +79,28 @@ $(window).load(function(){
                 loop:true
             }
         }
-    })
+    });
+
+
 });
 
 $(document).ready(function(){
-    
+
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 3000){
+            //alert("test")
+           
+            $( ".descarga3 .smartphone ").fadeIn( 100, function() {
+                 $(".descarga3 .smartphone").animate({'bottom':'0px'},500, 'linear');
+            });
+
+        } else { 
+            //$(".div-oculto-topfixed").hide(); 
+        }
+
+    });
+
    $(".bajar a").click(function(e){
     //alert("hez");
         e.preventDefault();
@@ -286,32 +303,32 @@ $(document).ready(function(){
                 var margen = self.pageYOffset;
                 if(margen>=10){
                     
-                    $(".header").addClass("fixed");
-                     $(".header .logo").toggleClass("chico");
-                    $(".header").stop().animate({'margin-top':'0px'}, 160, 'linear');
-                    $(".logofixed").hide();
-                    $(".registroinicio").fadeOut("fast");
-                    $(".boton .cerrar").hide();
-                    $(".boton .iniciar").show();
+                    $(".home .header").addClass("fixed");
+                     $(".home  .header .logo").toggleClass("chico");
+                    $(".home  .header").stop().animate({'margin-top':'0px'}, 160, 'linear');
+                    $(".home  .logofixed").hide();
+                    $(".home  .registroinicio").fadeOut("fast");
+                    $(".home  .boton .cerrar").hide();
+                    $(".home  .boton .iniciar").show();
                     //$(".logofixed").stop().fadeIn(100);
                     //$(".col-md-3 .logo").stop().animate({'margin-top':'-200px'},100, 'linear');
                     //$(".top").stop().animate({'top':'-40px'}, 120, 'linear');
                     //console.log("margen >= 10");
                 }else{
-                    $(".header").stop().animate({'margin-top':'0px'},160, 'linear');
-                    $(".header").removeClass("fixed");
-                    $(".logofixed").hide();
+                    $(".home  .header").stop().animate({'margin-top':'0px'},160, 'linear');
+                    $(".home  .header").removeClass("fixed");
+                    $(".home  .logofixed").hide();
                     //$(".col-md-3 .logo").stop().animate({'margin-top':'0px'},100, 'linear');
-                    $(".top").stop().animate({'top':'0px'}, 120, 'linear');
+                    $(".home .top").stop().animate({'top':'0px'}, 120, 'linear');
                     //console.log("margen < 10");
                     
                 };
             }else {
-                $(".top").stop().animate({'top':'0px'}, 120, 'linear');
+                $(".home  .top").stop().animate({'top':'0px'}, 120, 'linear');
                 
-                $(".header").stop().animate({'margin-top':'0px'},160, 'linear');
-                $(".header").removeClass("fixed");
-                $(".col-md-3 .logo").stop().animate({'margin-top':'0px'},100, 'linear');
+                $(".home  .header").stop().animate({'margin-top':'0px'},160, 'linear');
+                $(".home  .header").removeClass("fixed");
+                $(".home  .col-md-3 .logo").stop().animate({'margin-top':'0px'},100, 'linear');
                 console.log("Movil");
             }
         });

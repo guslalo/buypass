@@ -28,7 +28,7 @@
     <!--header-->
     <div class="header">
         <!--top --> 
-        <div class="top container-fluid" style="display: none;">
+        <div class="top container-fluid">
             <div class="container">
                 <div class="row">    
                     <!--logo--> 
@@ -42,20 +42,62 @@
 
                     <!--icono menu mobile--> 
                     <div class="iconmenu abrir">
-						<p>Menú</p>
-						<span></span>
-						<span></span>
-						<span></span> 
+                        <p>Menú</p>
+                        <span></span>
+                        <span></span>
+                        <span></span> 
                     </div><!--icono menu mobile-->
 
                     <!--icono menu mobile--> 
                     <div class="iconmenu cerrar">
-						<p>Cerrar</p> 
-						<i class="">x</i> 
+                        <p>Cerrar</p> 
+                        <i class="">x</i> 
                     </div><!--icono menu mobile-->  
                     
                     <div class="col-md-9">
-                  
+                        <!--iniciar sesion--> 
+                        <form class="iniciarsesion" autocomplete="off">
+                            <!--boton-->  
+                            <div class="boton">       
+                                <button type="button" class="iniciar btn btn-default ">Inicio sesión</button> 
+                                <button type="button" class="cerrar btn btn-default">
+                                    Cerrar 
+                                    <i class="fa fa-times-circle"></i>
+                                </button>
+                            </div><!--boton-->
+
+                            <!--registroinicio-->
+                            <div class="registroinicio">
+                                <div class="volver visible-xs visible-sm">
+                                    <i class="fa fa-chevron-left"></i>
+                                    Volver
+                                </div>
+                                <div class="form-group has-error has-feedback">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Ej. micorreo@mail.com" data-toggle="tooltip" data-placement="top" title="ej mensaje error">
+                                    <span class="fa fa-remove form-control-feedback"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Clave de 4 dígitos</label>
+                                    <input type="password" class="form-control" id="password" maxlength="4">
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="nochequed"> Mostrar contraseña</label>
+                                    <p class="text-right2"><a href="recuperar.html">¿Olvidaste tu contraseña?</a></p>
+                                </div>
+                                <div class="boxmitades">
+                                    <div>
+                                        <button type="submit" class="enviar btn btn-default hvr-sweep-to-right">
+                                            INICIAR SESIÓN
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group regi">
+                                    ¿Aún no tienes sesión? 
+                                    <a href="registro.html">Registrarme ahora</a>
+                                </div>
+                            </div><!--registroinicio-->
+                        </form><!--iniciar sesion-->
 
                         <!--iniciar sesion--> 
                         <form class="siniciada" style="display: none;">
@@ -63,12 +105,12 @@
                             <div class="bienvenido">       
                                 <span>Hola,</span> María José
                                 <i class="fa fa-angle-right"></i>
-								<div class="menuperfil">
-									<ul>
-										<li><a href="mi-perfil.html">Mi perfil</a></li>
-										<li><a href="javascript:;"> Cerrar sesión</a></li>
-									</ul>
-								</div>
+                                <div class="menuperfil">
+                                    <ul>
+                                        <li><a href="mi-perfil.html">Mi perfil</a></li>
+                                        <li><a href="javascript:;"> Cerrar sesión</a></li>
+                                    </ul>
+                                </div>
                             </div><!--boton-->
                         </form><!--iniciar sesion-->
 
@@ -76,10 +118,10 @@
                         <ul class="menutop">
                          
                             <li class="hvr-fade">
-                            	<a href="ayuda.html">Ayuda</a>
+                                <a href="ayuda.html">Ayuda</a>
                             </li>
                             <li class="hvr-fade">
-                            	<a href="contacto.html">Contacto</a>
+                                <a href="contacto.html">Contacto</a>
                             </li>   
                         </ul><!--menutop-->
                     </div>
@@ -94,7 +136,7 @@
                     <div class="col-md-12">
                     	<div class="logo normal2">
 							<a href="index.html">
-								<img src="img/logo.png">
+								<img src="img/logo.png" class="hidden-xs">
 							</a>
 						</div> 
                         <!--menuprincipal -->
@@ -106,10 +148,10 @@
                                 	</a>
                                 </li>
                                 <li  class="hvr-fade">
-                                	<a href="javascript:;">Tiendas adheridas</a>
+                                	<a href="tiendas.html">Tiendas adheridas</a>
                                 </li> 
                                 <li class="hvr-fade">
-                                	<a href="javascript:;">Retailers</a>
+                                	<a href="comercios.html">Comercios</a>
                                 </li>
                                 <li class="hvr-fade">
                                 	<a href="javascript:;">Iniciar sesión</a>
@@ -129,7 +171,7 @@
     
     <div class="boxcarru">
         <div class="bajar">
-            <a href="#descuentos2"><i class="fa fa-chevron-circle-down"></i></a>
+            <a href=".descarga"><i class="fa fa-chevron-circle-down"></i></a>
         </div>
         <!--slideprincipal owl-carousel--> 
     	<div class="owl-carousel slideprincipal">
@@ -139,7 +181,7 @@
     			<!-- banner textos -->
     			<div class="core">
     				<img src="img/slide.jpg" class="img-responsive hidden-xs desktop">
-    				<!-- <img src="img/coremobile.png" class="visible-xs">-->
+    				 <img src="img/slide.jpg" class="visible-xs">
     				<div class="container">
     					<div class="textos">
     						<h2>La App con que Ir de compras, nunca será lo mismo</h2>
@@ -153,10 +195,10 @@
                 <!-- banner textos -->
                 <div class="core">
                     <img src="img/slide2.jpg" class="img-responsive hidden-xs desktop">
-                    <!-- <img src="img/coremobile.png" class="visible-xs">-->
+                    <img src="img/slide.jpg" class="visible-xs">
                     <div class="container">
                         <div class="textos">
-                            <h2>texto ejemplo</h2>
+                            <h2>Con Buypass, la experiencia la creas tú. </h2>
                             <hr>
                         </div>
                     </div>
@@ -168,10 +210,10 @@
                 <!-- banner textos -->
                 <div class="core">
                     <img src="img/slider3.jpg" class="img-responsive hidden-xs desktop">
-                    <!-- <img src="img/coremobile.png" class="visible-xs">-->
+                    <img src="img/slide.jpg" class="visible-xs">
                     <div class="container">
                         <div class="textos">
-                            <h2>texto ejemplo</h2>
+                            <h2>Olvídate de colas y largas esperas, compra rápido, fácil y seguro. </h2>
                             <hr>
                         </div>
                     </div>
@@ -181,77 +223,54 @@
     	</div><!-- slideprincipal owl-carousel--> 
     </div>
     <!-- cuerpo center-->
-	<div class="container cuerpo">
-		<!-- descuentos -->
-		<div id="descuentos2" class="container descuentos nplr centrado">
-
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<h2> Ir de compras nunca será lo mismo </h2>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<p class="subtitulo"> Ahora la experiencia la creas tú, sin colas ni largas esperas en tus tiendas favoritas. </p>
-					<div class="btn btn-default">
-						 <a href="javascript:;">Regístrate gratis</a> 
-					</div>
-				</div>
-			</div>
-                    <p class="subtitulo">Descarga la App y disfruta la experiencia Buypass</p>
-			<!-- links tiendas-->
-						<div class="oss dos">
-							<div class="ios">
-								<a href="javascript:;">
-									<img src="img/appstore.png">
-								</a>
-							</div>
-							<div class="android">
-								<a href="javascript:;">
-									<img src="img/googleplay.png">
-								</a>
-							</div>
-						</div><!-- links tiendas-->
-
-			
-			<div class="row" style="display: none;">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-4">
-					<div class="vertodos">
-						<a href="descuentos.html">
-							VER TODOS LOS DESCUENTOS
-						</a>
-					</div>
-				</div>
-			</div>
-		</div><!-- descuentos -->
+	<div class="container-fluid cuerpo nplr">
+		<div class="descarga"> 
+            <div class="smartphone">
+                <img src="img/smartphone.png">
+            </div> 
+            <div class="gris"> 
+                <div class="container"> 
+                    <div class="col-xs-12 col-sm-5 col-md-12"> 
+                        <div class="text"> 
+                            <h2>Ir de compras nunca será lo mismo</h2> 
+                            <p>Ahora la experiencia la creas tú, sin colas ni largas esperas en tus tiendas favoritas.</p> 
+                            <div class="btn btn-default ">
+                                <a href="javascript:;">Regístrate gratis</a>
+                            </div>
+                        </div>
+                     </div> 
+                    <div class="col-xs-12 col-sm-5 col-md-7 pull-right"> 
+                        <!-- text--> 
+                        <div class="text"> 
+                            <!-- links tiendas--> 
+                            <div class="oss"> 
+                                <p>Descarga la App y disfruta la experiencia Buypass</p>
+                                <div class="ios"> 
+                                    <a href="javascript:;"> <img src="img/appstore.png"> </a> 
+                                </div> 
+                                <div class="android"> 
+                                    <a href="javascript:;"> 
+                                    <img src="img/googleplay.png"> </a> 
+                                </div> 
+                            </div><!-- links tiendas--> 
+                        </div><!-- text--> 
+                     </div> 
+                </div> 
+            </div>
+        </div>		
 	</div><!-- cuerpo center-->
 
 	<!-- descarga -->
-	<div class="descarga container-fluid nplr" class="parallax-window" data-parallax="scroll" data-image-src="/img/parallax.jpg">>
+	<div class="descarga2 container-fluid nplr" data-parallax="scroll" data-image-src="img/parallax.jpg">
         
 		<div class="gris dos">
 			<div class="container">
 				<div class="col-xs-12 col-sm-5 col-md-12">
 
-					<!-- text-->
+					
 					<div class="text">
-                        <
-						<h2>Siempre la misma experiencia, en todas tus tiendas</h2>
+                     	<h2>Siempre la misma experiencia, en todas tus tiendas</h2>
                         <p class="subtitulo">Con BUYPASS podrás comprar en las tiendas adheridas de la manera más fácil, rápida y segura, sin pagar en caja.</p>
-						<!-- links tiendas-->
-						<div class="oss">
-							<div class="ios">
-								<a href="javascript:;">
-									<img src="img/appstore.png">
-								</a>
-							</div>
-							<div class="android">
-								<a href="javascript:;">
-									<img src="img/googleplay.png">
-								</a>
-							</div>
-						</div><!-- links tiendas-->
 					</div><!-- text-->
 				</div>
 			</div>	
@@ -259,30 +278,163 @@
 	</div><!-- descarga -->
 
 
+    <!-- comofunciona -->
+    <div class="comofunciona container-fluid nplr">
+        
+        <div class=" dos">
+            <div class="container">
+                <div class="col-xs-12 col-sm-5 col-md-12">
+                    <h3>¿Cómo funciona BUYPASS?</h3>
+                </div>
+                <div class="boxpasos">
+                    <div class="col-xs-12 col-sm-5 col-md-3 paso">
+                        <div class="img"><img src="img/elige_icon.jpg" class="img"></div>
+                        <div class="textos">
+                            <h2>Elige tu tienda</h2>
+                            <p>Selecciona la tienda adherida en la que comprarás y comienza a vivir tu experiencia.</p>
+                        </div>
+                    </div>
+                      <div class="col-xs-12 col-sm-5 col-md-3 paso">
+                        <div class="img"><img src="img/escanea_icon@2x.jpg" class="img"></div>
+                        <div class="textos">
+                            <h2> Escanea </h2>
+                            <p> Agrega productos a tu carro escaneando el código de barras del producto. Puedes agregar cuantos productos quieras. </p>
+                        </div>
+                    </div>
+                      <div class="col-xs-12 col-sm-5 col-md-3 paso">
+                        <div class="img"><img src="img/elige_icon.jpg" class="img"></div>
+                        <div class="textos">
+                            <h2> Paga </h2>
+                            <p> Paga tus productos a través de la App. Nunca más en caja. </p>
+                        </div>
+                    </div>
+                      <div class="col-xs-12 col-sm-5 col-md-3 paso">
+                        <div class="img"><img src="img/elige_icon.jpg" class="img"></div>
+                        <div class="textos">
+                            <h2> Disfruta </h2>
+                            <p>Si tu tienda no requiere validación, estás listo para llevar tus productos!
+Con BUYPASS, tú creas la experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>          
+    </div> <!-- comofunciona -->
+
+    <!-- vive -->
+    <div class="vive container-fluid nplr"  data-parallax="scroll" data-image-src="img/vive.jpg">
+        
+        <div class="">
+            <div class="container">
+                <div class="col-xs-12 col-sm-5 col-md-6 pull-right">
+                    <h3>Vive tu Experiencia<br> BUYPASS</h3>
+                    <p>Ahora tú manejarás tu experiencia de compra con la mayor seguridad en cada transacción.</p>
+                </div>
+               
+            </div>  
+        </div>          
+    </div><!-- vive -->
+
+
+      <!-- gratis -->
+    <div class="descarga3"> 
+            <div class="smartphone">
+                <img src="img/descarga2.png">
+            </div> 
+            <div class="gris"> 
+                <div class="container"> 
+                    <div class="col-xs-12 col-sm-5 col-md-7 pull-right"> 
+                        <!-- text--> 
+                        <div class="text"> 
+                            <!-- links tiendas--> 
+                            <div class="oss"> 
+                                <p>Descarga Gratis <br><span>BUYPASS</span></p>
+                                <div class="ios"> 
+                                    <a href="javascript:;"> <img src="img/appstore.png"> </a> 
+                                </div> 
+                                <div class="android"> 
+                                    <a href="javascript:;"> 
+                                    <img src="img/googleplay.png"> </a> 
+                                </div> 
+                            </div><!-- links tiendas--> 
+                        </div><!-- text--> 
+                     </div> 
+                </div> 
+            </div>      
+            </div><!-- cuerpo center-->
+    </div><!-- gratis -->
+
+
+
+
+
 	<!-- apoyo -->
 	<div class="apoyo container-fluid nplr">
 		<div class="gris">
 			<div class="container">
-				<div class="col-xs-12 col-sm-5 col-md-12">
-					<!-- text-->
-					<div class="text">
+				<div class="row">
 						<h2>Con el apoyo de:</h2>
-						<!-- links tiendas-->
-						<img src="img/logos.jpg">
-						</div><!-- links tiendas-->
-					</div><!-- text-->
+						<div class="logos">
+                            <div class="col-xs-12 col-sm-5 col-md-3">
+                                <img src="img/corfo@2x.png">     
+                            </div>
+                             <div class="col-xs-12 col-sm-5 col-md-3">
+                                <img src="img/magical-logo@2x.png">     
+                            </div>
+                             <div class="col-xs-12 col-sm-5 col-md-3">
+                                <img src="img/endeavor@2x.png">     
+                            </div>
+                             <div class="col-xs-12 col-sm-5 col-md-3">
+                                <img src="img/mentores@2x.png">     
+                            </div>
+                        </div>
 				</div>
-			</div>	
+			</div>
 		</div>			
 	</div><!-- apoyo -->
 
 
+    <!-- contacto -->
+    <div class="contacto2 container-fluid nplr">
+            <div class="container">
+                <div class="row">
+                        <h2>Contacto</h2>
+                        <div class="form">
+                        <form action="https://www.apumanque.cl/contacto" name="form" class="contact" method="post" accept-charset="utf-8">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="form-group ">
+                                    <label for="nombre">Nombre completo</label>
+                                    <input type="text" class="form-control" name="nombre" id="nombre" value=""> <span class="fa fa-remove form-control-feedback"></span> </div>
+                                <div class="form-group ">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="text" class="form-control" name="nombre" id="nombre" value="">  <span class="fa fa-remove form-control-feedback"></span> </div>
+                        
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6">  
+                            <div class="form-group ">
+                                <label for="comment">Déjanos tu mensaje</label>
+                                <textarea class="form-control" rows="5" name="mensaje" id="comment"></textarea>
+                            </div>
+                </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                       
+                            <div class="btn btn-primary pull-right benviar">
+                                <a href="javascript:;"> Enviar</a> </div>
+
+                            </div>
+                            </form>
+                        </div>
+                </div>
+            </div>      
+    </div><!-- contacto -->
+
+
     <!--footer-->
     <div class="footer">
-    	<!--prefooter-->
+    	
 		<div class="prefooter container-fluid">
     <div class="container">
-        <!-- redes -->
+     
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <ul class="redes">
@@ -291,13 +443,23 @@
                             <i class="fa fa-facebook-square"></i>
                         </a>
                     </li>
-                   
+                    <li>
+                        <a class="f" target="  " href="javascript:;">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="f" target="  " href="javascript:;">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    
                 </ul>
             </div>
-        </div><!-- redes -->
-        <!-- menus -->
+        </div>
+   
         <div class="row menus">
-            <div class="col-xs-12 col-md-3">
+            <div class="col-xs-12 col-md-2">
                 <ul>
                     <li class="b">
                         <div class="logo chico">
@@ -320,25 +482,25 @@
                     <li>
                         <a href="javascript:;">Iniciar sesión</a>
                     </li>
+                    <li>
+                        <a href="javascript:;">Registrarme</a>
+                    </li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-md-3">
+            <div class="col-xs-12 col-md-5">
                 <ul>  
                     <li>
-                        <a href="javascript:;">Términos y Condiciones</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">Políticas de Privacidad</a>
+                        <a href="javascript:;"> Términos de uso y Políticas de Privacidad </a>
                     </li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-md-3">
+            <div class="col-xs-12 col-md-2">
              
             </div>
-        </div><!-- menus -->
+        </div>
     </div>  
-		</div><!--prefooter-->
-		<div class="bottom">2017. Buypass. Todos los Derechos Reservados.</div>		
+		</div>
+		<div class="bottom">2017. Buypass®. Todos los Derechos Reservados.</div>		
     </div>
     <!--footer-->
 
