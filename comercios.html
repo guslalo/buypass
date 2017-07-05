@@ -27,7 +27,83 @@
 <div class="wrap ninterior">
     <!--header-->
     <div class="header fixed">
-        
+        <!--top --> 
+        <div class="top container-fluid">
+            <div class="container">
+                <div class="row">    
+                    <!--logo--> 
+                    <div class="col-md-3">
+                        <div class="logo normal">
+                            <a href="index.html">
+                                <img src="img/logo.png">
+                            </a>
+                        </div>        
+                    </div><!--logo-->
+
+                    <!--icono menu mobile--> 
+                    <div class="iconmenu abrir">
+                        <p>Menú</p>
+                        <span></span>
+                        <span></span>
+                        <span></span> 
+                    </div><!--icono menu mobile-->
+
+                    <!--icono menu mobile--> 
+                    <div class="iconmenu cerrar">
+                        <p>Cerrar</p> 
+                        <i class="">x</i> 
+                    </div><!--icono menu mobile-->  
+                    
+                    <div class="col-md-9">
+                        <!--iniciar sesion--> 
+                        <form class="iniciarsesion" autocomplete="off">
+                            <!--boton-->  
+                            <div class="boton">       
+                                <button type="button" class="iniciar btn btn-default ">Inicio sesión</button> 
+                                <button type="button" class="cerrar btn btn-default">
+                                    Cerrar 
+                                    <i class="fa fa-times-circle"></i>
+                                </button>
+                            </div><!--boton-->
+
+                            <!--registroinicio-->
+                            <div class="registroinicio">
+                                <div class="volver visible-xs visible-sm">
+                                    <i class="fa fa-chevron-left"></i>
+                                    Volver
+                                </div>
+                                <div class="form-group has-error has-feedback">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Ej. micorreo@mail.com" data-toggle="tooltip" data-placement="top" title="ej mensaje error">
+                                    <span class="fa fa-remove form-control-feedback"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Clave de 4 dígitos</label>
+                                    <input type="password" class="form-control" id="password" maxlength="4">
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="nochequed"> Mostrar contraseña</label>
+                                    <p class="text-right2"><a href="recuperar.html">¿Olvidaste tu contraseña?</a></p>
+                                </div>
+                                <div class="boxmitades">
+                                    <div>
+                                        <button type="submit" class="enviar btn btn-default hvr-sweep-to-right">
+                                            INICIAR SESIÓN
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group regi">
+                                    ¿Aún no tienes sesión? 
+                                    <a href="registro.html">Registrarme ahora</a>
+                                </div>
+                            </div><!--registroinicio-->
+                        </form><!--iniciar sesion-->
+
+                   
+                    </div>
+                </div>
+            </div>
+        </div><!--/top -->
         <!--menuprincipalbox -->
         <div class="menuprincipalbox container-fluid">
             <div class="container">

@@ -1404,7 +1404,15 @@ border-radius: 15px;
 		}
 	}
 }
-
+.home {
+	.descarga3{ 
+		.smartphone{
+			position: absolute;
+			display:none;
+			bottom:-520px;
+		}
+	}
+}
 .descarga3{
 	position: relative;
 	height:580px;
@@ -1414,19 +1422,17 @@ border-radius: 15px;
 	.img {
 		position: absolute;
 		z-index:0;
-		width: 100%;
-
+		width:100%;
 		left: 0px;
 		top: 0px;
-
 	}
 		.smartphone{
 			position: absolute;
 			height:520px;
-			bottom:-520px;
+			bottom:0px;
 			left:27%;
 			overflow: hidden;
-			display:none;
+			
 			img {
 				height:520px;
 			}
@@ -4894,8 +4900,14 @@ form .has-feedback label ~ .form-control-feedback {
 
 
 @media print { 
-	.header{
+	.ni{
 		display: none !important;
+	}
+	.fichaproducto h3 {
+		display: none !important;
+	}
+	.header{
+		
 	}
 	.descarga {
 		display: none !important;

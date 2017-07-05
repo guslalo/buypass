@@ -91,8 +91,8 @@ $(document).ready(function(){
         if ($(this).scrollTop() > 3000){
             //alert("test")
            
-            $( ".descarga3 .smartphone ").fadeIn( 100, function() {
-                 $(".descarga3 .smartphone").animate({'bottom':'0px'},500, 'linear');
+            $( ".home .descarga3 .smartphone ").fadeIn( 100, function() {
+                 $(".home .descarga3 .smartphone").animate({'bottom':'0px'},500, 'linear');
             });
 
         } else { 

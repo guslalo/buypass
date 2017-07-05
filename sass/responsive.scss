@@ -823,6 +823,7 @@
 		}
 		
 	}
+
 	.reestabl {
 		.boxsesion {
 			min-height: 0;
@@ -1020,18 +1021,32 @@
 			}
 		}
 	}
+.ninterior .header.fixed {
+	height: 40px;
+}
 
+.ninterior {
+	.normal2 {
+		display: none;
+	}
+}
 	.menuprincipal { 
 		display: block; 
 		height:auto;
-		margin-top:45px;
-		
+		margin-top:30px;
+		margin-left: 0px;
 		left: 0px;
 		/*padding: 0 20px;*/
 		background: #fff;
 		width: 100%;
 		z-index: 9;
 		height: 100%;
+		.registrar{
+			width: 100%;
+			.btn {
+				width: 100%;
+			}
+		}
 		ul {
 			li {
 				width: 100%;
@@ -1043,6 +1058,7 @@
 				a {
 					padding: 0px;
 					line-height: 50px;
+					color: #000;
 				}
 			}
 		}
@@ -1056,6 +1072,7 @@
 		border-top: 1px solid #ddd;
 		float: left;
 		width: 100%;
+		margin-top: 30px;
 	}
 
 	.buscadorbox {
@@ -1174,9 +1191,19 @@
 .vertodos, .vertodos2 {
 	padding: 0 20px;
 }
+.comofunciona {
+	padding-bottom:25px;
+	.container {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.paso {
+		margin-bottom:20px;
+	}
+}
 	.core {
 		.textos { 
-			bottom:30px;
+			bottom:130px;
 			width: 100%;
 			box-sizing: border-box;
 			padding: 0 15px;
@@ -1197,17 +1224,83 @@
 	.iconmenu{
 		display: inline-block;
 	}
-
+	.contacto2 {
+		height: auto;
+		padding-bottom:25px;
+		.benviar {
+			width: 100%;
+		}
+	}
+	.apoyo {
+		padding-bottom: 25px;
+		.gris {
+			height: auto;
+		}
+		.logos {
+			 div {
+			 	margin-bottom:35px;
+			 }
+		}
+	}
+	.gd {
+		background: #D7D7D7;
+	}
+	.descarga3{
+		height:auto !important;
+		padding-bottom:70px;
+		.container {
+			> div {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+		}
+		.smartphone {
+			height: 200px;
+			display: none !important;
+		}
+		.oss {
+			margin-top: 20px;
+			width: 100%;
+			> div {
+				width:45%;
+				display: inline-block;
+				float: none;
+				margin-right: 0px;
+				img {
+					width:100%;
+				}
+			}
+		}
+	}
+	.descarga2 {
+		height: auto;
+		.gris {
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+		.text {
+			margin-top: 0px;
+			padding: 20px 20px;
+			h2 {
+				font-size: 32px;
+			}
+		}
+	}
 	.descarga {
-		height:705px;
+		height:auto;
 		background: #d7d7d7;
 		width: 100%;
-		margin-top: 130px;
-
+		margin-top:0px;
+		padding-top: 20px;
+		.smartphone {
+				display: none;
+		}
 		&.nplr {
 			padding:0px !important;
 		}
 		.gris {
+			height:auto;
+			padding-bottom: 40px;
 			.container {
 				>div {
 					padding: 0px;
@@ -1215,6 +1308,7 @@
 			}
 			.oss {
 				width: 100%;
+				margin-top:40px;
 				.ios {
 					width:47%;
 					img {
@@ -1243,6 +1337,7 @@
 				overflow:unset;
 				left:auto;
 				top: -125px;
+
 				img {
 					width: 100%;
 				}
@@ -1275,6 +1370,12 @@
 	  		color: #878787;
 	  		line-height: 50px;
 	  	}
+	  	/*&:first-child {
+	  			display:none;
+	  		}*/
+	  	.logo {
+	  		display: none;
+	  	}
 	  	.prefooter{
 	  		height: auto;
 	  		padding-bottom: 20px;
@@ -1295,7 +1396,7 @@
 	  	}
 	  	.menus {
 	  		ul {
-	  			margin-bottom:40px;
+	  			margin-bottom:0px;
 	  			li {
 	  				&.b {
 	  					a {
@@ -2471,7 +2572,11 @@
 	.hvr-icon-wobble-horizontal2::before {
     	right: 80px;
 	}
-
+.boxcarru {
+	.bajar {
+		display: none;
+	}
+}
 	.construccion {
 		overflow: hidden;
 		.muj {

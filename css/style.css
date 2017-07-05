@@ -7636,6 +7636,11 @@ p.subtitulo {
         margin: 0 auto;
         margin-bottom: 30px; }
 
+.home .descarga3 .smartphone {
+  position: absolute;
+  display: none;
+  bottom: -520px; }
+
 .descarga3 {
   position: relative;
   height: 580px;
@@ -7651,10 +7656,9 @@ p.subtitulo {
   .descarga3 .smartphone {
     position: absolute;
     height: 520px;
-    bottom: -520px;
+    bottom: 0px;
     left: 27%;
-    overflow: hidden;
-    display: none; }
+    overflow: hidden; }
     .descarga3 .smartphone img {
       height: 520px; }
   .descarga3 .gris {
@@ -10541,7 +10545,9 @@ form .has-feedback label ~ .form-control-feedback {
     margin-right: 10px; }
 
 @media print {
-  .header {
+  .ni {
+    display: none !important; }
+  .fichaproducto h3 {
     display: none !important; }
   .descarga {
     display: none !important; }
@@ -11938,16 +11944,25 @@ form .has-feedback label ~ .form-control-feedback {
         line-height: 47px; }
     .resultados .resultado .verlocal i {
       display: none; }
+  .ninterior .header.fixed {
+    height: 40px; }
+  .ninterior .normal2 {
+    display: none; }
   .menuprincipal {
     display: block;
     height: auto;
-    margin-top: 45px;
+    margin-top: 30px;
+    margin-left: 0px;
     left: 0px;
     /*padding: 0 20px;*/
     background: #fff;
     width: 100%;
     z-index: 9;
     height: 100%; }
+    .menuprincipal .registrar {
+      width: 100%; }
+      .menuprincipal .registrar .btn {
+        width: 100%; }
     .menuprincipal ul li {
       width: 100%;
       height: 60px; }
@@ -11955,13 +11970,15 @@ form .has-feedback label ~ .form-control-feedback {
         background: white; }
       .menuprincipal ul li a {
         padding: 0px;
-        line-height: 50px; }
+        line-height: 50px;
+        color: #000; }
   .owl-buttons {
     display: none; }
   .menutop {
     border-top: 1px solid #ddd;
     float: left;
-    width: 100%; }
+    width: 100%;
+    margin-top: 30px; }
   .buscadorbox {
     background: #ffffff;
     position: relative;
@@ -12047,8 +12064,15 @@ form .has-feedback label ~ .form-control-feedback {
       right: 30px; }
   .vertodos, .vertodos2, .vertodos2 {
     padding: 0 20px; }
+  .comofunciona {
+    padding-bottom: 25px; }
+    .comofunciona .container {
+      padding-right: 0px;
+      padding-left: 0px; }
+    .comofunciona .paso {
+      margin-bottom: 20px; }
   .core .textos {
-    bottom: 30px;
+    bottom: 130px;
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -12063,39 +12087,88 @@ form .has-feedback label ~ .form-control-feedback {
     width: 100%; }
   .iconmenu {
     display: inline-block; }
+  .contacto2 {
+    height: auto;
+    padding-bottom: 25px; }
+    .contacto2 .benviar {
+      width: 100%; }
+  .apoyo {
+    padding-bottom: 25px; }
+    .apoyo .gris {
+      height: auto; }
+    .apoyo .logos div {
+      margin-bottom: 35px; }
+  .gd {
+    background: #D7D7D7; }
+  .descarga3 {
+    height: auto !important;
+    padding-bottom: 70px; }
+    .descarga3 .container > div {
+      padding-left: 0px;
+      padding-right: 0px; }
+    .descarga3 .smartphone {
+      height: 200px;
+      display: none !important; }
+    .descarga3 .oss {
+      margin-top: 20px;
+      width: 100%; }
+      .descarga3 .oss > div {
+        width: 45%;
+        display: inline-block;
+        float: none;
+        margin-right: 0px; }
+        .descarga3 .oss > div img {
+          width: 100%; }
+  .descarga2 {
+    height: auto; }
+    .descarga2 .gris {
+      padding-top: 25px;
+      padding-bottom: 25px; }
+    .descarga2 .text {
+      margin-top: 0px;
+      padding: 20px 20px; }
+      .descarga2 .text h2 {
+        font-size: 32px; }
   .descarga {
-    height: 705px;
+    height: auto;
     background: #d7d7d7;
     width: 100%;
-    margin-top: 130px; }
+    margin-top: 0px;
+    padding-top: 20px; }
+    .descarga .smartphone {
+      display: none; }
     .descarga.nplr {
       padding: 0px !important; }
-    .descarga .gris .container > div {
-      padding: 0px; }
-    .descarga .gris .oss {
-      width: 100%; }
-      .descarga .gris .oss .ios {
-        width: 47%; }
-        .descarga .gris .oss .ios img {
-          width: 100%; }
-      .descarga .gris .oss .android {
-        width: 47%; }
-        .descarga .gris .oss .android img {
-          width: 100%; }
-    .descarga .gris .text {
-      margin-top: 0px; }
-      .descarga .gris .text p {
+    .descarga .gris {
+      height: auto;
+      padding-bottom: 40px; }
+      .descarga .gris .container > div {
+        padding: 0px; }
+      .descarga .gris .oss {
         width: 100%;
-        height: auto;
-        font-size: 18px;
-        line-height: 24px; }
-    .descarga .gris .smartphone {
-      position: relative;
-      overflow: unset;
-      left: auto;
-      top: -125px; }
-      .descarga .gris .smartphone img {
-        width: 100%; }
+        margin-top: 40px; }
+        .descarga .gris .oss .ios {
+          width: 47%; }
+          .descarga .gris .oss .ios img {
+            width: 100%; }
+        .descarga .gris .oss .android {
+          width: 47%; }
+          .descarga .gris .oss .android img {
+            width: 100%; }
+      .descarga .gris .text {
+        margin-top: 0px; }
+        .descarga .gris .text p {
+          width: 100%;
+          height: auto;
+          font-size: 18px;
+          line-height: 24px; }
+      .descarga .gris .smartphone {
+        position: relative;
+        overflow: unset;
+        left: auto;
+        top: -125px; }
+        .descarga .gris .smartphone img {
+          width: 100%; }
   .contacto {
     height: 650px; }
     .contacto .mujer {
@@ -12108,7 +12181,10 @@ form .has-feedback label ~ .form-control-feedback {
     height: auto;
     background-color: #1d1d26;
     position: static;
-    width: 100%; }
+    width: 100%;
+    /*&:first-child {
+	  			display:none;
+	  		}*/ }
     .footer .bottom {
       background: #1d1d26;
       height: auto;
@@ -12116,6 +12192,8 @@ form .has-feedback label ~ .form-control-feedback {
       font-size: 14px;
       color: #878787;
       line-height: 50px; }
+    .footer .logo {
+      display: none; }
     .footer .prefooter {
       height: auto;
       padding-bottom: 20px; }
@@ -12131,7 +12209,7 @@ form .has-feedback label ~ .form-control-feedback {
           color: #fff;
           font-size: 27px; }
     .footer .menus ul {
-      margin-bottom: 40px; }
+      margin-bottom: 0px; }
       .footer .menus ul li.b a {
         color: #ffc300;
         text-transform: uppercase;
@@ -12919,6 +12997,8 @@ form .has-feedback label ~ .form-control-feedback {
     text-align: center; }
   .hvr-icon-wobble-horizontal2::before {
     right: 80px; }
+  .boxcarru .bajar {
+    display: none; }
   .construccion {
     overflow: hidden; }
     .construccion .muj {
